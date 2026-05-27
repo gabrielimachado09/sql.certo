@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS cliente(
+	id INTEGER primary key AUTOINCREMENT,
+	nome text not NULL,
+	telefone text not NULL,
+	cpf text not NULL unique 
+    );
+    /*
+    insert into cliente (nome, telefone, cpf)
+    VALUES
+    ('cliente', '45999457689', '879.987.879-23');
+   
+    select * FROM cliente; 
+    */
+    
+    CREATE TABLE IF NOT EXISTS fornecedor(
+	id INTEGER primary key AUTOINCREMENT,
+	nome text not NULL,
+	telefone text not NULL,
+	cpf text not NULL unique, 
+    fornecedor text NOT NULL
+    
+    );
+    insert into fornecedor (nome, telefone, cpf, fornecedor)
+    VALUES
+    ('lucas', '45 997345655', '983.234.000.-34', 'linhas agulhas tecidos');
+    
+    select * FROM fornecedor;
+    
+    
